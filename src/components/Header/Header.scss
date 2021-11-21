@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    cursor: pointer;
 
     .header-logo-image {
       width: 5rem;
@@ -28,6 +27,8 @@
     display: flex;
 
     .header-nav-item {
+      color: $text-color;
+      text-decoration: none;
       border-radius: 0.5rem;
       cursor: pointer;
       transition: all 0.3s ease-in-out;

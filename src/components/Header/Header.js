@@ -1,5 +1,6 @@
 import "./Header.scss"
 import React from 'react'
+import { Link } from 'react-location'
 import logo from "../../assets/images/logo.png"
 
 const Header = () => {
@@ -10,10 +11,10 @@ const Header = () => {
         <div className="header-logo-name">coketriks</div>
       </div>
       <div className="header-nav">
-        <div className="header-nav-item">Home</div>
-        <div className="header-nav-item">Our</div>
-        <div className="header-nav-item">Mine</div>
-        <div className="header-nav-item">Me</div>
+        <Link to="/" className="header-nav-item">Home</Link>
+        <Link to="/our" className="header-nav-item">Our</Link>
+        <Link to="/mine" className="header-nav-item">Mine</Link>
+        <Link to="/me" className="header-nav-item">Me</Link>
       </div>
     </div>
   )
