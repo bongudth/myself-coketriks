@@ -1,1 +1,29 @@
 @import "../../assets/scss/Variable.scss";
+
+.trick-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  .trick-header {
+    display: flex;
+    justify-content: space-between;
+
+    .trick-title {
+      font-weight: bold;
+    }
+
+    .trick-save {
+      font-size: larger;
+      cursor: pointer;
+    }
+  }
+
+  .trick-code {
+    font-family: "PT Mono", monospace;
+    font-size: small;
+  }
+}

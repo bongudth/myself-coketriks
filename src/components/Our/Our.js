@@ -1,10 +1,13 @@
 import "./Our.scss"
 import React from 'react'
+import Trick from '../Trick/Trick'
 
 const Our = () => {
   return (
-    <div>
-      This is Our
+    <div className="our-container">
+      <Trick />
+      <Trick />
+      <Trick />
     </div>
   )
 }
