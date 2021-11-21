@@ -1,0 +1,41 @@
+@import "../../assets/scss/Variable.scss";
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    .header-logo-image {
+      width: 5rem;
+    }
+
+    .header-logo-name {
+      font-size: larger;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .header-nav {
+    display: flex;
+
+    .header-nav-item {
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
